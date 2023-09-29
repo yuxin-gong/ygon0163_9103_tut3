@@ -88,13 +88,13 @@ Design Programming
  _Github-LingDong_
 
 #### More implemention inspirations
-- ![A gif of fire brush](https://pic4.zhimg.com/v2-1ff3be8ebaa25f6d678a05c6bf61c793_b.webp)
+- ![A gif of fire brush](readmeImages/fire%20brush1.webp)
  _Jason Labbe_
-- ![A gif of fire brush](https://pic4.zhimg.com/v2-aa0953028a7eda4e9ed7f8d2df6b8f17_b.webp)
+- ![A gif of fire brush](readmeImages/fire%20brush2.webp)
  _Jason Labbe_
-- ![A gif of geyser](https://vdn3.vzuu.com/SD/040abe48-23b7-11eb-b890-16b47e045b2f.mp4?disable_local_cache=1&bu=078babd7&c=avc.0.0&f=mp4&expiration=1696000322&auth_key=1696000322-0-0-84023b98cfa04f953106fc7d5638b726&v=tx&pu=078babd7)
+- ![A gif of geyser](readmeImages/geyser.mp4)
 _Richard Bourne_
-- ![A gif of Let Van Gogh&amp;#39;s Stars Flow,](https://vdn3.vzuu.com/SD/8c378994-2381-11eb-802c-3a9f54f405a4.mp4?disable_local_cache=1&bu=078babd7&c=avc.0.0&f=mp4&expiration=1696000337&auth_key=1696000337-0-0-d9e65903ae7247288d792132a20875e7&v=tx&pu=078babd7)
+- ![A gif of Let Van Gogh&amp;#39;s Stars Flow,](readmeImages/let%20van%20gogh.mp4)
 _aganztracy_
 - ![A gif of cube partices](https://pic3.zhimg.com/v2-937c3142fa6de843dddce08e16540df6_b.webp)
 _Shane Cranor_
