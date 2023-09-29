@@ -5,8 +5,8 @@ Design Programming
 2. __Part2 Coding Technique Exploration__
 ![An image of intro](https://picx.zhimg.com/70/v2-5d2d779ea351bcd0052dc70e0db26b30_1440w.avis?source=172ae18b&biz_tag=Post)
 
-### Imaging Technique Inspiration
-- __Procedural Graphics-Particle art__
+### Imaging Technique Inspiration-Particle art
+- __Particle art__
 > "Particle system is a geometry composed of many particles used to represent blurred objects. During a specific period of time, particles are generated, moved, transformed, and ultimately vanish in the system" ——Wiiliam Reeves，《Particle Systems——A Technique for Modeling a Class of Fuzzy Objects》
 
   - Inspired by sand painting, traditional Chinese landscape scrolls, and particle art exhibition I've seen before
