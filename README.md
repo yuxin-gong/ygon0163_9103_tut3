@@ -1,8 +1,8 @@
 # ygon0163_9103_tut3
 Design Programming
 ## QUIZ8
-1 __Part1 Imaging Technique Inspiration__
-2 __Part2 Coding Technique Exploration__
+1. __Part1 Imaging Technique Inspiration__
+2. __Part2 Coding Technique Exploration__
 
 ### Imaging Technique Inspiration
 - __Procedural Graphics-Particle art__
