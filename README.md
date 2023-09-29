@@ -19,5 +19,15 @@ Links to an external site.)
 ![An image of a cat](http://placekitten.com/200/300
 Links to an external site.)
 ###### Header 6
-![An image of the Mona Lisa](readmeImages/Mona_Lisa_by_Leonardo_da_Vinci_500_x_700.jpg
-Links to an external site.)
+![An image of the Mona Lisa](readmeImages/Mona_Lisa_by_Leonardo_da_Vinci_500_x_700.jpg)
+
+```
+function helloWorld() {
+console.log("Hello, world!");
+}
+```
+`inline code`
+```multi-line 
+code blocks```
+
+> This is a blockquote.
