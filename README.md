@@ -27,7 +27,9 @@ console.log("Hello, world!");
 }
 ```
 `inline code`
-```multi-line 
-code blocks```
+```
+multi-line 
+code blocks
+```
 
 > This is a blockquote.
