@@ -38,9 +38,6 @@ function setup() {
 		cube.push(new Cube())
 	}
 
-  squareSize = random(height/4);
-  squareSizeTarget=random(height/4);
-
   //set the animation
   myAnimation = new AnimatedEllipses(img);
 
@@ -95,8 +92,10 @@ function slide0() {
 		cube[i].draw();
 	}
 	rotate(frameCount * 0.025);
+
   drawImageBorder();
   pop();
+
   drawImageFrame();
 	
 }
@@ -107,8 +106,12 @@ function slide1(){
   background(0,20);
 
   drawImageFrame();
-
   drawImageBorder();
+
+  for (let i = 0; i < cube.length; i++) {
+		cube[i].draw();
+	}
+
   if (drawSegments) {
   //draw the segments to the canvas
   for (let y = 0; y < segments.length; y++) {
@@ -247,37 +250,25 @@ function calculateImageDrawProps() {
 }
 
 class Cube{
-  constructor(columnPositionInPrm, rowPostionInPrm  ,srcImgSegColourInPrm) {
-    //The row and column position give us relative position of the segment in the image that do not change when the image is resized
-    //We will use these to calculate the x and y position of the segment when we draw it
+  constructor() {
+    
+    this.drawXPos = random(windowWidth);  
+    this.drawYPos = random(windowHeight); 
+    this.squareSize = random(50,100)
+    this.squareSizeTarget = random(50,100)
 
-    this.columnPosition = columnPositionInPrm;
-    this.rowPostion = rowPostionInPrm;
-    this.srcImgSegColour = srcImgSegColourInPrm;
-    //These parameters are not set when we create the segment object, we will calculate them later
-    this.drawXPos = 0;
-    this.drawYPos = 0;
-    this.drawWidth = 0;
-    this.drawHeight = 0;
-
-  }
-
-  calculateSegDrawProps() {
-    this.drawWidth = imgDrwPrps.width / numSegments;
-    this.drawHeight = imgDrwPrps.height / numSegments;
-
-    this.drawXPos = this.rowPostion * this.drawWidth + imgDrwPrps.xOffset;
-    this.drawYPos = this.columnPosition * this.drawHeight + imgDrwPrps.yOffset;
   }
 
   draw(){
     noFill()
     stroke(66,98,255);
-    square(this.drawWidth / 2, this.drawHeight / 2, squareSize);
-    squareSize = lerp(squareSize, squareSizeTarget, t);
+    square(this.drawXPos, this.drawYPos, this.squareSize);
+
+    //create auto-updated size
+    this.squareSize = lerp(this.squareSize, this.squareSizeTarget, t);
 
     if (frameCount%50==0){
-    squareSizeTarget=random(height)
+      this.squareSizeTarget = random(50, 150);
       }
     }
 
@@ -342,13 +333,13 @@ class AnimatedEllipses {
 
 class ImageSegment {
   constructor(columnPositionInPrm, rowPostionInPrm  ,srcImgSegColourInPrm) {
-    //The row and column position give us relative position of the segment in the image that do not change when the image is resized
-    //We will use these to calculate the x and y position of the segment when we draw it
+    //The row and column position give relative position of the segment in the image that do not change when the image is resized
+    //use these to calculate the x and y position of the segment when we draw it
 
     this.columnPosition = columnPositionInPrm;
     this.rowPostion = rowPostionInPrm;
     this.srcImgSegColour = srcImgSegColourInPrm;
-    //These parameters are not set when we create the segment object, we will calculate them later
+    ////calculate these parameters later
     this.drawXPos = 0;
     this.drawYPos = 0;
     this.drawWidth = 0;
