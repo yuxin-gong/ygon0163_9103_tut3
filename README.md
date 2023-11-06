@@ -8,3 +8,10 @@ some tips to go with my work:
 
 try 'key pressed'!
 try 'mouse click'!
+
+some instructions to have more fun:
+
+change between scene1 and scene2!
+change between original and processed artwork!
+
+the different time interval will lead to surprise!
